@@ -110,6 +110,8 @@ class ChessGUI:
                     playsound("sfx/capture.mp3", block=False)
                 self.board[tr][tc] = self.board[fr][fc]
                 self.board[fr][fc] = ""
+            else:
+                playsound("sfx/illegal.mp3", block=False)
 
             self.selected_r = None
             self.selected_c = None
